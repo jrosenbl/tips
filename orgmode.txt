@@ -1,0 +1,28 @@
+C-C C-x C-i clock in
+C-c C-x C-o clock out
+C-c C-x C-Q cancel timer
+C-u C-c C-x i interrupt/switch to another timed task
+
+C-c C-x ; countdown
+C-c C-x , pause/restart timer (count down or up)
+C-c C-x 0 count up
+C-c C-x - add mark timer value; (first start a sub-line)
+          type some text for the mark and hit esc return for next time mark
+C-u C-c C-x , cancel timer
+C-u C-c C-x 0 start timer with an offset
+
+scheduling, agenda
+C-c C-s  schedule
+C-c C-d  deadline
+C-c a a  open agenda view
+shift-F in agenda view activates follow mode where movement in agenda buffer is tracked in org buffer
+f or b in weekly view moves forward or backward a week
+C-c C-t to mark status of task. for example marking as DONE removes from agenda view
++1w  (or d, m, y) for repeating tasks; insert at end of timestamp: <... +1w>
+++1w next same day of week skipping any in the past.
+.+4w schedule 4 weeks from DONE timestamp
+
+todo tags
+customized todo tags. right of pipe are todo states; left of pipe are done states
+#+SEQ_TODO: NEXT(c) PROJ(p) TODO(t) WAITING(w) SOMEDAY(s) | DONE(d) CANCELLED(c)
+if changed in current buffer. do C-c C-c to have org mode read it.
